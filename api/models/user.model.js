@@ -16,6 +16,11 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    avatar: {
+      type: String,
+      default:
+        "https://res.cloudinary.com/judo2000/image/upload/v1696808114/default_caemyy.jpg",
+    },
   },
   { timestamps: true }
 );
